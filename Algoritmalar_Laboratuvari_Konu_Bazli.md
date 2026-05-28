@@ -113,19 +113,20 @@ class Program
         int sB = 0, sS = 0, sK = 0, sZ = 0;
 
         for (int b = 0; b <= 1; b++)   // Baklava
-        for (int s = 0; s <= 1; s++)   // Sutlac
-        for (int k = 0; k <= 1; k++)   // Kunefe
-        for (int z = 0; z <= 1; z++)   // Kazandibi
-        {
-            int fiyat    = b * 7 + s * 4 + k * 5 + z * 3;
-            int mutluluk = b * 9 + s * 5 + k * 7 + z * 4;
+            for (int s = 0; s <= 1; s++)   // Sutlac
+                for (int k = 0; k <= 1; k++)   // Kunefe
+                    for (int z = 0; z <= 1; z++)   // Kazandibi
+                        {
+                            int fiyat    = b * 7 + s * 4 + k * 5 + z * 3;
+                            int mutluluk = b * 9 + s * 5 + k * 7 + z * 4;
 
-            if (fiyat <= butce && mutluluk > maxMutluluk)
-            {
-                maxMutluluk = mutluluk;
-                sB = b; sS = s; sK = k; sZ = z;
-            }
-        }
+                            if (fiyat <= butce && mutluluk > maxMutluluk)
+                            {
+                                maxMutluluk = mutluluk;
+                                sB = b; sS = s; sK = k; sZ = z;
+                            }
+                        }
+                          
 
         Console.WriteLine("En iyi secim:");
         if (sB == 1) Console.WriteLine("- Baklava");
