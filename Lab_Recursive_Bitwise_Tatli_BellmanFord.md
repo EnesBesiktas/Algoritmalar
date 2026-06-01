@@ -73,9 +73,9 @@ class Program
         Console.WriteLine("Bitwise toplam (int olarak): " + sonuc);
     }
 
-    /// <summary>
+    
     /// 32-bit int girişleri için XOR/AND/shift ile toplama; long ile taşma kontrolü.
-    /// </summary>
+     
     static bool BitwiseToplaTaşmaKontrol(int a, int b, out int sonuc)
     {
         long x = a;
@@ -122,9 +122,9 @@ Tüm kombinasyonlar `Dene(0)` ile derinlikte denenir; `index == 4` olunca toplam
 ```csharp
 using System;
 
-/// <summary>
-/// Verileri ve arama mantığını tek sınıfta toplar (encapsulation).
-/// </summary>
+
+//Verileri ve arama mantığını tek sınıfta toplar (encapsulation).
+
 class TatliSecici
 {
     private readonly int[] kaloriler = { 5, 4, 7, 3 };
